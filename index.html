@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Task Board</h1>
+
+    <section aria-labelledby="greeting-title">
+      <h2 id="greeting-title">Who is working?</h2>
+      <form id="name-form">
+        <label for="name-input">Your name</label>
+        <input id="name-input" name="name" type="text" placeholder="Type your name">
+        <button type="submit">Say hello</button>
+      </form>
+      <p id="greeting" role="status"></p>
+    </section>
+
+    <section aria-labelledby="tasks-title">
+      <h2 id="tasks-title">Tasks</h2>
+      <form id="task-form">
+        <label for="task-input">New task</label>
+        <input id="task-input" name="task" type="text" placeholder="What needs to be done?">
+        <button type="submit">Add task</button>
+      </form>
+      <p id="task-error" class="error" role="alert"></p>
+      <ul id="task-list"></ul>
+      <p id="task-summary">No tasks yet</p>
+      <button id="clear-done" type="button">Clear completed</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
